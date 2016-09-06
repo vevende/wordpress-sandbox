@@ -3,6 +3,7 @@
 
 .python-version
 
+.phpintel/
 .data/
 
 htdocs/
