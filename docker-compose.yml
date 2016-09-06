@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:5.7
     volumes:
-      - "./.data/db:/var/lib/mysql"
+      - ./.data/db:/var/lib/mysql
     restart: always
     ports:
       - 3306:3306
@@ -22,7 +22,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - "./htdocs:/var/www/html"
+      - ./htdocs:/var/www/html
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
