@@ -23,6 +23,7 @@ services:
       - "8080:8080"
     volumes:
       - ./htdocs:/var/www/html
+      - ./php-custom.ini:/usr/local/etc/php/conf.d/custom.ini
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
