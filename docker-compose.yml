@@ -2,9 +2,9 @@ version: '2'
 services:
   db:
     image: mysql:5.7
+    restart: always
     volumes:
       - /var/lib/mysql
-    restart: always
     ports:
       - 3306:3306
     environment:
@@ -15,19 +15,18 @@ services:
 
   wordpress:
     build: .
+    user: wordpress
+    restart: always
     depends_on:
       - db
     links:
       - db
     ports:
-      - "8080:8080"
+      - 8080:8080
     volumes:
+      - /home/wordpress
       - ./htdocs:/var/www/html
       - ./php-custom.ini:/usr/local/etc/php/conf.d/custom.ini
-      - ./.wp-cli:/home/wordpress/.wp-cli
-    restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: wordpress
-      APACHE_RUN_USER: wordpress
-      APACHE_RUN_GROUP: wordpress
