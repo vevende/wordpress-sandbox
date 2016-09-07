@@ -28,13 +28,14 @@ RUN sed -i '/Listen 80/c\Listen 8080' /etc/apache2/apache2.conf \
 
 # Install wp-cli
 
+RUN curl --silent -o /bin/wp-cli.phar https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
 RUN apt-get update \
-    && apt-get install -y less \
+    && apt-get install -y less zip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/*
 
-RUN curl --silent -o /bin/wp-cli.phar https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-RUN echo -e '#!/bin/sh\nsu - wordpress -c "/bin/wp-cli.phar '\$*'"' > /bin/wp
+RUN echo \-e '#!/bin/sh\nsu - wordpress -c "/bin/wp-cli.phar '\$*'"' > /bin/wp
 RUN chmod +x /bin/wp-cli.phar /bin/wp
 
 EXPOSE 8080

@@ -17,7 +17,7 @@ Then open http://localhost:8080/ and have fun!
 
 A firt boot for developers could look like this:
 
-    wp package plugin install danielbachhuber/dictator
+    wp package install danielbachhuber/dictator
     wp plugin install woocommerce
     wp plugin install debug-bar
     wp plugin install debug-bar-extender
