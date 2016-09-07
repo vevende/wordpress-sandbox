@@ -3,6 +3,7 @@
 
 .python-version
 
+.idea/
 .phpintel/
 .data/
 
