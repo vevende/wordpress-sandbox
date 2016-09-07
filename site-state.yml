@@ -1,9 +1,0 @@
-state: site
-settings:
-  title: Bonita
-  description: Comprando entre amigas
-  date_format: F j, Y
-  time_format: g:i a
-  active_theme: storefront
-plugins:
-  - danielbachhuber/dictator

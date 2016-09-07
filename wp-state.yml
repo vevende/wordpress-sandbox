@@ -1,0 +1,56 @@
+state: site
+settings:
+  title: Tienda
+  description: A Store
+  admin_email: admin@localhost
+  timezone:
+  date_format: j F, Y
+  time_format: g:i a
+  public: true
+  posts_per_page: 10
+  posts_per_feed: 10
+  feed_uses_excerpt: false
+  show_on_front: page
+  page_on_front: 20
+  page_for_posts: 0
+  allow_comments: true
+  allow_pingbacks: true
+  notify_comments: true
+  notify_moderation: true
+  permalink_structure: /%year%/%monthnum%/%day%/%postname%/
+  category_base:
+  tag_base:
+  active_theme: storefront
+  active_plugins:
+    - debug-bar/debug-bar.php
+    - woocommerce/woocommerce.php
+users:
+  admin:
+    display_name: admin
+    first_name:
+    last_name:
+    email: admin@localhost
+    role: administrator
+terms:
+  category:
+    sin-categoria:
+      name: Sin categoría
+      description:
+      parent:
+  post_tag: [ ]
+  post_format: [ ]
+  product_cat:
+    categoria-1:
+      name: Categoria 1
+      description:
+      parent:
+    categoria-2:
+      name: Categoria 2
+      description:
+      parent:
+    categoria-3:
+      name: Categoria 3
+      description:
+      parent:
+  product_tag: [ ]
+  product_shipping_class: [ ]
