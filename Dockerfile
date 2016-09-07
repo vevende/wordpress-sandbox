@@ -39,7 +39,5 @@ COPY wp.sh /bin/wp
 RUN chmod +x /bin/wp-cli.phar /bin/wp
 
 ENV TERM xterm
-ENV WP_CLI_CACHE_DIR /var/www/html/.wp-cli/cache
-ENV WP_CLI_PACKAGES_DIR /var/www/html/.wp-cli/packages
 
 EXPOSE 8080
