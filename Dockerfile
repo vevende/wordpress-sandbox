@@ -38,4 +38,7 @@ RUN apt-get update \
 RUN echo \-e '#!/bin/sh\nsu - wordpress -c "/bin/wp-cli.phar '\$*'"' > /bin/wp
 RUN chmod +x /bin/wp-cli.phar /bin/wp
 
+ENV WP_CLI_CACHE_DIR /var/www/html/.wp-cli/cache
+ENV WP_CLI_PACKAGES_DIR /var/www/html/.wp-cli/packages
+
 EXPOSE 8080

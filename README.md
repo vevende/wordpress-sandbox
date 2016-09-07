@@ -1,6 +1,8 @@
 # wordpress-sandbox
 
-A wordpress sandbox ready to develop with docker containers
+A wordpress sandbox ready to develop with docker containers.
+
+**WARNING: This is not intended for production use**  
 
 ## Usage
 
