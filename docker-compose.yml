@@ -24,13 +24,10 @@ services:
     volumes:
       - ./htdocs:/var/www/html
       - ./php-custom.ini:/usr/local/etc/php/conf.d/custom.ini
-      - ./.wp-cli:/var/wp-cli/
+      - ./.wp-cli:/home/wordpress/.wp-cli
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: wordpress
       APACHE_RUN_USER: wordpress
       APACHE_RUN_GROUP: wordpress
-      WP_CLI_CACHE_PATH: /var/wp-cli/cache
-      WP_CLI_PACKAGES_PATH: /var/wp-cli/packages
-
