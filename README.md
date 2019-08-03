@@ -2,7 +2,7 @@
 
 A wordpress sandbox ready to develop with docker containers.
 
-**WARNING: This is not intended for production use**  
+**WARNING: This is not intended for production use**
 
 ## Usage
 
@@ -25,5 +25,5 @@ A firt boot for developers could look like this:
     wp plugin install debug-bar-extender
     wp plugin install custom-post-type-ui
     wp plugin install show-current-template
-    wp plugin install smart-custom-fields 
+    wp plugin install smart-custom-fields
     wp dictator impose site-state.yml
