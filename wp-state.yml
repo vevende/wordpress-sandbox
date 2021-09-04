@@ -2,7 +2,7 @@ state: site
 settings:
   title: Tienda
   description: A Store
-  admin_email: admin@localhost
+  admin_email: admin@mail.com
   timezone:
   date_format: j F, Y
   time_format: g:i a
@@ -29,7 +29,7 @@ users:
     display_name: admin
     first_name:
     last_name:
-    email: admin@localhost
+    email: admin@mail.com
     role: administrator
 terms:
   category:
