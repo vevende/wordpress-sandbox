@@ -21,9 +21,10 @@ A firt boot for developers could look like this:
 
     wp package install danielbachhuber/dictator
     wp plugin install woocommerce
+    wp theme install storefront
     wp plugin install debug-bar
     wp plugin install debug-bar-extender
     wp plugin install custom-post-type-ui
     wp plugin install show-current-template
     wp plugin install smart-custom-fields
-    wp dictator impose site-state.yml
+    wp dictator impose wp-state.yml
