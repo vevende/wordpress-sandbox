@@ -1,4 +1,4 @@
-FROM wordpress:5-apache
+FROM wordpress:5.8-apache
 
 ENV APACHE_RUN_USER=wordpress \
     APACHE_RUN_GROUP=wordpress \
