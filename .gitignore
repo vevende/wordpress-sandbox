@@ -6,5 +6,6 @@
 .idea/
 .phpintel/
 .data/
+.vscode/
 
 htdocs/
